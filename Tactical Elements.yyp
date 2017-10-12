@@ -34,7 +34,7 @@
             "Key": "122eaf82-1ae1-4118-b319-6c6c1c71c5f4",
             "Value": {
                 "id": "6c2b0f20-c56c-4138-93af-0bb7b5f6d086",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\initialize_rm\\initialize_rm.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "2cb593e1-118a-44ad-8a62-9fd156ac0a1a",
+            "Value": {
+                "id": "d63b23fc-16de-45b2-a3bc-14b58d732a0e",
+                "resourcePath": "scripts\\create_game_board_scr\\create_game_board_scr.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2dd28526-378b-4e8d-9ebb-cdf4b2937d00",
             "Value": {
                 "id": "4a1e045e-a602-400e-ad10-3cad51867054",
@@ -55,19 +63,11 @@
             }
         },
         {
-            "Key": "2edf780d-6a6e-4cc0-8435-101c0d68e5bf",
+            "Key": "45b85f6a-fbd5-4cf8-9dac-450068387afd",
             "Value": {
-                "id": "a3ce1fe5-508d-4e2c-85cf-73e80d2e0da1",
-                "resourcePath": "sprites\\test3_sp\\test3_sp.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "3faeaf48-2867-470e-88de-3cb39fd968e4",
-            "Value": {
-                "id": "60b5eeb1-995c-4ed4-9d30-e15214551d21",
-                "resourcePath": "sprites\\test_sp\\test_sp.yy",
-                "resourceType": "GMSprite"
+                "id": "e4259ffe-7ea9-4479-9a2b-e9f1d00cd63e",
+                "resourcePath": "rooms\\game_rm\\game_rm.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -135,11 +135,11 @@
             }
         },
         {
-            "Key": "9a23dc10-ce84-4f5f-8d45-693a3abf21ba",
+            "Key": "887d3062-6385-4cee-9f30-d462aec758aa",
             "Value": {
-                "id": "90063487-10cd-4eb9-afea-92bd8e0aa372",
-                "resourcePath": "sprites\\test2_sp\\test2_sp.yy",
-                "resourceType": "GMSprite"
+                "id": "edffbd63-beb4-441d-826a-2d09ecf3ecd7",
+                "resourcePath": "views\\887d3062-6385-4cee-9f30-d462aec758aa.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -175,11 +175,43 @@
             }
         },
         {
+            "Key": "dca69017-9c94-4f7d-8526-aba75ad4a767",
+            "Value": {
+                "id": "709e47d2-83ef-4a97-9008-9ef6aa0b5313",
+                "resourcePath": "sprites\\square_sp\\square_sp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "df355f40-3540-4ae5-aa0a-6f3ad256bf26",
             "Value": {
                 "id": "2a1ad03b-9a9d-438c-be49-d135d47db4d9",
                 "resourcePath": "views\\df355f40-3540-4ae5-aa0a-6f3ad256bf26.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e44d6acc-33cd-4313-9536-4648ccc63104",
+            "Value": {
+                "id": "30ba075b-10b8-4160-a446-d30157ce4bc0",
+                "resourcePath": "sprites\\sprite0\\sprite0.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e5a3a363-f093-41ae-84c2-561406e6b825",
+            "Value": {
+                "id": "902cbb95-5325-49a3-a68a-927f875868b9",
+                "resourcePath": "objects\\square_obj\\square_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e994d2a5-e6f5-4c1a-b65c-c9b15cc322eb",
+            "Value": {
+                "id": "e148fca6-1b20-4c39-8ad8-2d0a7de4af21",
+                "resourcePath": "objects\\game_controller_obj\\game_controller_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -224,7 +256,7 @@
         }
     ],
     "script_order": [
-        
+        "2cb593e1-118a-44ad-8a62-9fd156ac0a1a"
     ],
     "tutorial": ""
 }
