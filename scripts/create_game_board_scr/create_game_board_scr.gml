@@ -9,7 +9,7 @@ var current_row=1;
 var current_col=1;
 var current_square_number=1;
 var length=sprite_get_width(square_sp);
-var first_col_square=instance_create_layer(920,446,"square_layer",square_obj);
+var first_col_square=instance_create_layer(120,120,"square_layer",square_obj);
 var current_square=first_col_square;
 
 while(current_row<=total_board_rows)
