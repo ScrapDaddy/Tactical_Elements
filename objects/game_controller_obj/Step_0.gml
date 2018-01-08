@@ -2,4 +2,8 @@ if(board_created==0)
 {
 		create_game_board_scr(total_board_rows,total_board_cols);
 		board_created=1;
+		player1_hero_base_stats=read_hero_card_from_deck_scr("player1_deck.txt");
+		player2_hero_base_stats=read_hero_card_from_deck_scr("player2_deck.txt");
+		create_hero_model_scr(player1_hero_base_stats,1);
+		create_hero_model_scr(player2_hero_base_stats,2);
 }

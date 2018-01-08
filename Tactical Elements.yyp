@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0b17fb25-319b-4e45-81e7-d80a3b5e4d0f",
+            "Value": {
+                "id": "c029e82e-f56e-4c43-af29-bb41d54d671e",
+                "resourcePath": "scripts\\read_hero_card_from_deck_scr\\read_hero_card_from_deck_scr.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "122eaf82-1ae1-4118-b319-6c6c1c71c5f4",
             "Value": {
                 "id": "6c2b0f20-c56c-4138-93af-0bb7b5f6d086",
@@ -63,11 +71,27 @@
             }
         },
         {
+            "Key": "352cf1d3-7085-4341-a492-9a77bfce3ae6",
+            "Value": {
+                "id": "685d1083-89dc-4b03-a3a5-9dac5d46b29d",
+                "resourcePath": "datafiles_yy\\player2_deck.txt.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "45b85f6a-fbd5-4cf8-9dac-450068387afd",
             "Value": {
                 "id": "e4259ffe-7ea9-4479-9a2b-e9f1d00cd63e",
                 "resourcePath": "rooms\\game_rm\\game_rm.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "4fdc4bbb-1603-4695-8af4-b62dbf16bb54",
+            "Value": {
+                "id": "2b47273f-c52f-4a16-9f69-c0076569d3a5",
+                "resourcePath": "objects\\model_obj\\model_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -111,6 +135,22 @@
             }
         },
         {
+            "Key": "75fd6755-9dae-4e50-af61-27281d39ea03",
+            "Value": {
+                "id": "004baabf-120c-4a61-b819-56afc01d10f2",
+                "resourcePath": "datafiles_yy\\card_database.txt.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "79aebfb0-8980-4b90-a8a1-be976cda38d5",
+            "Value": {
+                "id": "eefce8f3-a756-49ce-a118-ac6c8cafa437",
+                "resourcePath": "datafiles_yy\\player1_deck.txt.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "7e97e63a-8b73-4352-9af3-0b18e85c70a8",
             "Value": {
                 "id": "2436fb21-8b9f-4104-a6bd-d3b30ac5b0e0",
@@ -143,11 +183,35 @@
             }
         },
         {
+            "Key": "8e6ffec3-aaa5-4990-81ab-c3fb66affb17",
+            "Value": {
+                "id": "b4d946dc-d041-4d1e-a4e6-4613320b57df",
+                "resourcePath": "scripts\\read_card_database_stats_scr\\read_card_database_stats_scr.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8f613965-1145-458e-8704-82bcf2698d42",
+            "Value": {
+                "id": "27185a8b-496d-41d4-add2-4d634797dcab",
+                "resourcePath": "sprites\\test_hero_2_sp\\test_hero_2_sp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "b942da18-f7fe-4c8f-930e-490758833a14",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "b733c89b-3cca-40ac-a5c3-b32e64d97936",
+            "Value": {
+                "id": "db674a0a-3d72-4bc1-bca0-ef1a74b2a376",
+                "resourcePath": "sprites\\test_hero_1_sp\\test_hero_1_sp.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -191,11 +255,11 @@
             }
         },
         {
-            "Key": "e44d6acc-33cd-4313-9536-4648ccc63104",
+            "Key": "e54d7ae6-b891-49dd-9f6e-fa2856789ded",
             "Value": {
-                "id": "30ba075b-10b8-4160-a446-d30157ce4bc0",
-                "resourcePath": "sprites\\sprite0\\sprite0.yy",
-                "resourceType": "GMSprite"
+                "id": "8656dc2c-d567-4167-bac1-2e4c6976acd5",
+                "resourcePath": "scripts\\create_hero_model_scr\\create_hero_model_scr.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -239,6 +303,14 @@
             }
         },
         {
+            "Key": "f9a8482a-2943-49e4-aecc-c02a631ff5ea",
+            "Value": {
+                "id": "3f636dba-b2ee-4dfa-b3e6-5e9f5a0e14d7",
+                "resourcePath": "views\\f9a8482a-2943-49e4-aecc-c02a631ff5ea.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "fdc9d884-074d-4fcc-ad6b-74d08d66d386",
             "Value": {
                 "id": "7f882e8d-3a62-4c14-9999-abb480dc7a27",
@@ -256,7 +328,10 @@
         }
     ],
     "script_order": [
-        "2cb593e1-118a-44ad-8a62-9fd156ac0a1a"
+        "2cb593e1-118a-44ad-8a62-9fd156ac0a1a",
+        "0b17fb25-319b-4e45-81e7-d80a3b5e4d0f",
+        "e54d7ae6-b891-49dd-9f6e-fa2856789ded",
+        "8e6ffec3-aaa5-4990-81ab-c3fb66affb17"
     ],
     "tutorial": ""
 }

@@ -1,0 +1,6 @@
+card_id:name:base_health:attack:move:min_range:max_range:ability1:ability2:ability3:ability4:ability5:ability6:mana_value:
+0
+test_hero_1:250:25:4:0:1:0:0:0:0:0:0:25:
+1
+test_hero_2:210:30:4:0:1:0:0:0:0:0:0:25:
+2
