@@ -1,5 +1,5 @@
-x_square=0;
-y_square=0;
+current_square=noone;
+owner=0;
 card_id=0;
 name="";
 mana_value=0;
