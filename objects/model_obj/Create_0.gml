@@ -1,6 +1,7 @@
 current_square=noone;
 owner=0;
 card_id=0;
+highlight=noone;
 name="";
 mana_value=0;
 base_health=0;

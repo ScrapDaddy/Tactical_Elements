@@ -16,8 +16,8 @@ else if(player==2)
 }
 else
 {
-		show_debug_message("Hero unable to be created, invalid player");
-		return 0;
+	show_debug_message("Hero unable to be created, invalid player");
+	return 0;
 }
 
 var stats_list=read_card_database_stats_scr(stats);
@@ -31,6 +31,9 @@ if(player==1)
 		if(square.square_number==29) {model.current_square=square.id;}
 	}
 	model.owner=1;
+	var highlight=instance_create_layer(model.x,model.y,"highlight_layer",highlight_obj);
+	highlight.sprite_index=blue_highlight_sp;
+	model.highlight=highlight.id;
 }
 else if(player==2) 
 {
@@ -40,6 +43,9 @@ else if(player==2)
 		if(square.square_number==141) {model.current_square=square.id;}
 	}
 	model.owner=2;
+	var highlight=instance_create_layer(model.x,model.y,"highlight_layer",highlight_obj);
+	highlight.sprite_index=red_highlight_sp;
+	model.highlight=highlight.id;
 }
 model.name=ds_list_find_value(stats_list,0);
 model.base_health=int64(ds_list_find_value(stats_list,1));
