@@ -18,3 +18,6 @@ current_move=0;
 current_min_range=0;
 current_max_range=0;
 current_abilities=ds_list_create();
+
+selected=0;
+move_available=1;
