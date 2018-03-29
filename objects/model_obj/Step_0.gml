@@ -6,32 +6,27 @@ if(highlight!=noone)
 	highlight.y=y;
 }
 
-if(clicked_me_scr(current_square.id,mb_left)==1 and selected==0) //left clicked model
-{
-	selected=1;
-}
-else if(clicked_not_me_scr(current_square.id,mb_left)==1 and selected==1) //left clicked not model
-{
-	selected=0;
-}
-
-if(clicked_anywhere_scr(mb_right)==1) //right clicked anywhere
-{
-	selected=0;
-}
-
-if(move_available==1 and selected==1)
-{
-	standard_move_scr(id,current_move);
-}
-
-
 if(selected==1)
 {
-	highlight.sprite_index=yellow_highlight_sp;
+	if(clicked_not_me_scr(current_square.id,mb_left)==1 or clicked_anywhere_scr(mb_right)==1) //left clicked not model or right click anywhere
+	{
+		selected=0;
+		if(owner==1) {highlight.sprite_index=blue_highlight_sp;}
+		else if(owner==2) {highlight.sprite_index=red_highlight_sp;}
+		clear_square_highlights_scr();
+	}
+
+	if(move_available==1)
+	{
+		var list=standard_move_scr(id,current_move);
+	}
 }
-else
+else //if selected==0
 {
-	if(owner==1) {highlight.sprite_index=blue_highlight_sp;}
-	else if(owner==2) {highlight.sprite_index=red_highlight_sp;}
+	
+	if(clicked_me_scr(current_square.id,mb_left)==1) //left clicked model
+	{
+		selected=1;
+		highlight.sprite_index=yellow_highlight_sp;
+	}
 }

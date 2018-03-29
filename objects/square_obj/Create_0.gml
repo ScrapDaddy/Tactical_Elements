@@ -6,3 +6,4 @@ left=noone;
 col=1;
 row=1;
 occupied=0;
+highlight=instance_create_layer(x,y,"highlight_layer",highlight_obj);

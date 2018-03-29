@@ -6,7 +6,8 @@
     "children": [
         "73ae3406-939b-46f3-8cbb-bbc7593360d6",
         "a8d88a25-8a02-433e-9bf8-08ce9f1b6351",
-        "59e1fe30-12f3-4d10-80ce-2fbf0c87f06d"
+        "59e1fe30-12f3-4d10-80ce-2fbf0c87f06d",
+        "f90012ab-5077-46c2-96fe-1eda6753a141"
     ],
     "filterType": "GMSprite",
     "folderName": "Highlights",
