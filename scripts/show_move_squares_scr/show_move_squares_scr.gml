@@ -5,6 +5,7 @@ return 1
 */
 var model_id=argument0;
 var start_move = argument1;
+
 var start_square_id=model_id.current_square;
 var square_list = ds_list_create();
 var current_square_id=start_square_id;
