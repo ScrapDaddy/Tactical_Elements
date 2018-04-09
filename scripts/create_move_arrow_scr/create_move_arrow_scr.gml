@@ -24,7 +24,7 @@ if(remaining_moves>0)
 	if(square!=0)
 	{
 		model_id.selected_square=square;
-		var arrow=instance_create_layer(square.x,square.y,"arrow_layer",arrow_object);
+		var arrow=instance_create_layer(square.x,square.y,"arrow_layer",arrow_obj);
 		if(square==selected_square.up) {arrow.image_angle=90;}
 		if(square==selected_square.right) {arrow.image_angle=0;}
 		if(square==selected_square.down) {arrow.image_angle=270;}
@@ -32,8 +32,8 @@ if(remaining_moves>0)
 		
 		if(remaining_moves>1) {arrow.sprite_index=arrow_line_sp;}
 		else {arrow.sprite_index=arrow_end_sp;}
+		return 1;
 	}
-	return 1;
 }
 
 return 0;

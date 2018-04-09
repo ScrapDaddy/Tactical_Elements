@@ -1,6 +1,14 @@
-for(i=0;i<instance_number(arrow_obj);i++)
+var all_gone=0;
+while(all_gone==0)
 {
-	var square=instance_find(arrow_obj,i);
-	square.highlight.sprite_index=-1;
+	var arrow=instance_find(arrow_obj,0);
+	if(arrow!=noone)
+	{
+		instance_destroy(arrow);	
+	}
+	else
+	{
+		all_gone=1;	
+	}
 }
 return 1;
