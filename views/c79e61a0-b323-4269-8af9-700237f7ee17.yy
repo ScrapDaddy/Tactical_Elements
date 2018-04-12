@@ -6,7 +6,8 @@
     "children": [
         "8f262a36-66a3-4123-a815-f3595e3402cb",
         "82b002c9-3b99-4686-bf22-d4dd1d96086c",
-        "841caea7-600e-46e7-a07b-11678efca573"
+        "841caea7-600e-46e7-a07b-11678efca573",
+        "ad9a8639-b61e-40ea-a925-3cd2649ecd65"
     ],
     "filterType": "GMScript",
     "folderName": "Moving",

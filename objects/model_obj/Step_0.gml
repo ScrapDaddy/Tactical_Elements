@@ -18,6 +18,14 @@ if(selected==1)
 		if(create_move_arrow_scr(id,move_square_list)==1) {remaining_moves--;}
 	}
 	
+	if(clicked_anywhere_scr(mb_right)==1)
+	{
+		for(i=0;i<ds_list_size(selected_square);i++)
+		{
+			move_model_scr(id);
+		}
+	}
+	
 	if(clicked_not_me_scr(current_square.id,mb_left)==1 or clicked_anywhere_scr(mb_right)==1) //left clicked not model or right click anywhere
 	{
 		selected=0;
