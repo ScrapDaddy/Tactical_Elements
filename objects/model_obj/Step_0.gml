@@ -6,7 +6,7 @@ if(highlight!=noone)
 	highlight.y=y;
 }
 
-if(selected==1)
+if(selected==1 and acting==0)
 {
 	if(move_available==1)
 	{
@@ -18,11 +18,12 @@ if(selected==1)
 		if(create_move_arrow_scr(id,move_square_list)==1) {remaining_moves--;}
 	}
 	
-	if(clicked_anywhere_scr(mb_right)==1)
+	if(clicked_me_scr(selected_square,mb_right)==1)
 	{
-		for(i=0;i<ds_list_size(selected_square);i++)
+		if(action==1 and move_available==1)
 		{
-			move_model_scr(id);
+			acting=1;
+			move_available=0;
 		}
 	}
 	
@@ -39,7 +40,7 @@ if(selected==1)
 	}
 
 }
-else //if selected==0
+else if(acting==0) //if selected==0
 {
 	
 	if(clicked_me_scr(current_square.id,mb_left)==1) //left clicked model
@@ -47,4 +48,13 @@ else //if selected==0
 		selected=1;
 		highlight.sprite_index=yellow_highlight_sp;
 	}
+}
+
+if(acting==1)
+{
+	if(action==1)
+	{
+		move_model_scr(id);		
+	}
+	step++;
 }
