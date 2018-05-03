@@ -8,7 +8,7 @@ if(highlight!=noone)
 
 if(selected==1 and acting==0)
 {
-	if(move_available==1)
+	if(move_available==1 and action==1)
 	{
 		if(created_square_highlight==0)
 		{
@@ -16,6 +16,10 @@ if(selected==1 and acting==0)
 			created_square_highlight=1;
 		}
 		if(create_move_arrow_scr(id,move_square_list)==1) {remaining_moves--;}
+	}
+	else if(action==2)
+	{
+		
 	}
 	
 	if(clicked_me_scr(selected_square,mb_right)==1)
