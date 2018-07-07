@@ -27,6 +27,7 @@ if(selected==1)
 		clear_arrows_scr();
 		created_square_highlight=0;
 		ds_list_clear(move_square_list);
+		ds_list_clear(hovered_squares);
 		remaining_moves=current_move;
 	}
 

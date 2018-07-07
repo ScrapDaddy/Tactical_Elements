@@ -23,6 +23,7 @@ if(remaining_moves>0)
 	var square=hovered_over_me_scr(selected_square,highlighted_square_list);
 	if(square!=0)
 	{
+		ds_list_add(model_id.hovered_squares,square);
 		model_id.selected_square=square;
 		var arrow=instance_create_layer(square.x,square.y,"arrow_layer",arrow_obj);
 		if(square==selected_square.up) {arrow.image_angle=90;}

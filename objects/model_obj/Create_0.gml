@@ -26,3 +26,4 @@ created_square_highlight=0;
 move_square_list=ds_list_create();
 remaining_moves=current_move;
 selected_square=noone;
+hovered_squares=ds_list_create();
