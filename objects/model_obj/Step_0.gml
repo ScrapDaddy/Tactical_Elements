@@ -31,7 +31,7 @@ if(selected==1 and acting==0)
 		}
 	}
 	
-	if(clicked_not_me_scr(current_square.id,mb_left)==1 or clicked_anywhere_scr(mb_right)==1) //left clicked not model or right click anywhere
+	if(clicked_not_me_scr(current_square.id,mb_left)==1) //left clicked not model or right click anywhere
 	{
 		selected=0;
 		if(owner==1) {highlight.sprite_index=blue_highlight_sp;}
@@ -42,8 +42,23 @@ if(selected==1 and acting==0)
 		ds_list_clear(move_square_list);
 		ds_list_clear(hovered_squares);
 		remaining_moves=current_move;
+		ds_list_clear(selected_squares);
 	}
-
+	if(clicked_me_scr(current_square.id,mb_left)==1)
+	{
+		
+	}
+	if(clicked_anywhere_scr(mb_right)==1)
+	{
+		selected=0;
+		if(owner==1) {highlight.sprite_index=blue_highlight_sp;}
+		else if(owner==2) {highlight.sprite_index=red_highlight_sp;}
+		clear_square_highlights_scr();
+		clear_arrows_scr();
+		created_square_highlight=0;
+		ds_list_clear(move_square_list);
+		ds_list_clear(hovered_squares);
+	}
 }
 else if(acting==0) //if selected==0
 {
