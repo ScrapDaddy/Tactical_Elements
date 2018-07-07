@@ -6,9 +6,9 @@ if(highlight!=noone)
 	highlight.y=y;
 }
 
-if(selected==1)
+if(selected==1 and acting==0)
 {
-	if(move_available==1)
+	if(move_available==1 and action==1)
 	{
 		if(created_square_highlight==0)
 		{
@@ -16,6 +16,19 @@ if(selected==1)
 			created_square_highlight=1;
 		}
 		if(create_move_arrow_scr(id,move_square_list)==1) {remaining_moves--;}
+	}
+	else if(action==2)
+	{
+		
+	}
+	
+	if(clicked_me_scr(selected_square,mb_right)==1)
+	{
+		if(action==1 and move_available==1)
+		{
+			acting=1;
+			move_available=0;
+		}
 	}
 	
 	if(clicked_not_me_scr(current_square.id,mb_left)==1 or clicked_anywhere_scr(mb_right)==1) //left clicked not model or right click anywhere
@@ -32,7 +45,7 @@ if(selected==1)
 	}
 
 }
-else //if selected==0
+else if(acting==0) //if selected==0
 {
 	
 	if(clicked_me_scr(current_square.id,mb_left)==1) //left clicked model
@@ -40,4 +53,13 @@ else //if selected==0
 		selected=1;
 		highlight.sprite_index=yellow_highlight_sp;
 	}
+}
+
+if(acting==1)
+{
+	if(action==1)
+	{
+		move_model_scr(id);		
+	}
+	step++;
 }
