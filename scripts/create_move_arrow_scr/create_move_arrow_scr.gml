@@ -24,6 +24,7 @@ if(remaining_moves>0)
 	if(square!=0)
 	{
 		ds_list_add(model_id.hovered_squares,square);
+		ds_list_add(model_id.selected_squares,square);
 		model_id.selected_square=square;
 		var arrow=instance_create_layer(square.x,square.y,"arrow_layer",arrow_obj);
 		if(square==selected_square.up) {arrow.image_angle=90;}
