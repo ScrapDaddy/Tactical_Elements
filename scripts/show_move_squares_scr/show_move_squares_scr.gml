@@ -1,10 +1,9 @@
 /*
 model id = argument0;
-start_move = argument1;
-return 1
+return square_list
 */
 var model_id=argument0;
-var start_move = argument1;
+var start_move = model_id.current_move;
 
 var start_square_id=model_id.current_square;
 var square_list = ds_list_create();

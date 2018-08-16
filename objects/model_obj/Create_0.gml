@@ -22,10 +22,12 @@ current_abilities=ds_list_create();
 
 selected=0;
 move_available=1;
+basic_attack_available=1;
 action_available=1;
 remaining_moves=current_move;
 created_square_highlight=0;
 move_square_list=ds_list_create();
+attack_square_list=ds_list_create();
 remaining_moves=current_move;
 selected_square=noone;
 hovered_squares=ds_list_create();

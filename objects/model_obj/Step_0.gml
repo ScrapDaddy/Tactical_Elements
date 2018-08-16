@@ -12,14 +12,18 @@ if(selected==1 and acting==0)
 	{
 		if(created_square_highlight==0)
 		{
-			move_square_list=show_move_squares_scr(id,current_move);
+			move_square_list=show_move_squares_scr(id);
 			created_square_highlight=1;
 		}
 		if(create_move_arrow_scr(id,move_square_list)==1) {remaining_moves--;}
 	}
-	else if(action==2)
+	else if(basic_attack_available==1 and action==2)
 	{
-		
+		if(created_square_highlight==0)
+		{
+			attack_square_list=show_attack_squares_scr(id);
+			created_square_highlight=1;
+		}
 	}
 	
 	if(clicked_me_scr(selected_square,mb_right)==1)
