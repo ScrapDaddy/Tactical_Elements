@@ -1,5 +1,6 @@
 x=current_square.x;
 y=current_square.y;
+
 if(highlight!=noone)
 {
 	highlight.x=x;	
