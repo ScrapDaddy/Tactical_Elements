@@ -4,7 +4,7 @@ remaining_move = argument1;
 square_list = argument2;
 return 1
 */
-var current_square_id=argument0;
+var current_square_id = argument0;
 var remaining_move = argument1;
 var square_list = argument2;
 
